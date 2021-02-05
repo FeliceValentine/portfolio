@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+
+html {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: #e2d3d9;
+    font-family: 'Playfair Display', serif;    
+    padding: 0;
+    margin: 0;
+}
+
+.aboutPageWrapper, .contactPageWrapper{
+    background-color: #ca638e;
+}
+
+.hero {
+    height: auto;
+}
+
+
+nav { 
+    max-width: 1400px;
+    height: 2.75rem;
+    margin: 0 auto;
+}
+
+nav ul {
+    display: flex;
+    justify-content: end;
+}
+
+nav li {
+    list-style: none;
+    padding: 0 2rem;
+    font-size: 1.3rem;
+}
+ 
+nav a {
+    text-decoration: none;
+    border-bottom: 2px solid #444;
+}
+
+a:link { 
+    color: #000;
+}  
+a:visited { 
+    color: #444;
+}
+a:hover { 
+    color: #ca83a1;
+}
+a:active { 
+    color: #814961;
+ }
+
+
+
+.heroText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20vh;
+} 
+
+.heroText img {
+    margin-left: 3rem;
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+span {
+    color: #ca638e;
+}
+
+
+
+.about {
+    background-color: #ca638e;
+    margin-top: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutWrapper {
+    width: 1400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutImg {
+    margin-right: 4rem;
+}
+
+h2{
+    font-size: 2rem;
+    text-decoration: underline;
+    color:#e2d3d9;
+}
+
+.about p {
+    font-size: 1.15rem;
+    font-family: 'Lato', sans-serif;
+    word-spacing: 3px;
+    color:#e2d3d9;
+}
+
+
+
+.seeProjects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #444;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.seeProjects a {
+    text-decoration: none;
+}
+
+h4 {
+    padding: 0 1rem;
+}
+
+
+.projects {
+    height: calc(100vh - 7.7rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.projects h2 {
+    color:#444;
+    font-size: 6rem;
+    margin-right: 4rem;
+}
+
+.projectsWrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.projectsWrapper i{
+    font-size: 2.5rem;
+    padding: 0 0.5rem;
+}
+
+
+h3 {
+    font-size: 2rem;
+    padding-right: 2rem;
+}
+
+.title1, .title2, .title3 {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.p1, .p2, .p3 {
+    margin: 1rem;
+    color:#444;
+}
+
+
+.projectsWrapper p {
+    font-family: 'Lato', sans-serif;
+}
+
+.project1, .project2, .project3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem;
+}
+
+.project1 img, .project2 img, .project3 img {
+    border-radius: 10px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    animation-name: pulse;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+
+
+@keyframes pulse {
+    from { transform: scale(1); }
+    50% { transform: scale(0.75); }
+    to { transform: scale(1); }
+}
+  
+.anim {
+    animation-name: pulse;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.contact {
+    background-color: #ca638e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactWrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactImg {
+    display: flex;
+    justify-content: center;
+}
+
+.contactText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #e2d3d9;
+}
+
+.cWrap {
+    font-size: 3rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.cWrap i {
+    color: #444;
+}
+.cWrap i:hover {
+    color: #ca83a1;
+}
+
+.contactMe {
+    font-size: 1.75rem;
+}
