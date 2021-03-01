@@ -76,18 +76,14 @@ span {
     color: #ca638e;
 }
 
-
-
 .about {
-    background-color: #ca638e;
-    margin-top: 7rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 80%;
+    margin: auto;
 }
 
 .aboutWrapper {
-    width: 1400px;
+    background-color: #ca638e;
+    margin-top: 7rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -252,4 +248,129 @@ h3 {
 
 .contactMe {
     font-size: 1.75rem;
+}
+
+
+
+@media (max-width: 1280px) {
+    .heroText {
+        margin: 15vh;
+    } 
+    .heroText h1{
+        font-size: 2.25rem;
+    }
+    .heroText img {
+        margin-left: 0rem;
+    }
+
+    .about {
+        width: 90%;
+    }
+    .aboutImg {
+        margin-right: 2rem;width:350px;
+    }
+    .aboutImg img {
+        width:350px;
+    }
+
+    .projects h2 {
+        font-size: 4.5rem;
+    }
+    .projects img {
+        width:400px;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .heroText {
+        flex-direction: column-reverse;
+        margin: 10vh;
+    } 
+
+    .heroText h1{
+        font-size: 2.25rem;
+        text-align: center;
+    }
+    .aboutWrapper {
+        margin-top: 2rem;
+        flex-direction: column;
+    }
+    .aboutText p {
+        font-size: 1rem;
+    }
+
+
+    .projects {
+        flex-direction: column-reverse;
+    }    
+    .projects img {
+        width: 350px;
+    }
+    .projects h2 {
+        font-size: 3rem;
+        margin-right: 0;
+    }
+    .project1, .project2, .project3 {
+        flex-direction: column;
+        margin: 2rem;
+        border-bottom: 2px solid rgb(129, 129, 129);
+    }
+
+    .contactText {
+        width: 95%;
+        margin: auto;
+    }
+}
+
+
+@media (max-width: 650px) {
+    .heroText .anim {
+        width: 350px;
+    }
+    h1,h2 {
+        text-align: center;
+    }
+    .heroText h1{
+        font-size: 2rem;
+    }
+    .heroText {
+        flex-direction: column-reverse;
+        margin: 0rem 2rem;
+    } 
+    
+    nav li {
+        list-style: none;
+        padding: 0 1rem;
+        font-size: 1.1rem;
+    }
+    nav ul {
+        display: flex;
+        justify-content: center
+    }
+    .aboutImg {
+        display: flex;
+        justify-content: center
+    }
+    .aboutImg img {
+        width:250px;
+    }
+
+    .project1 img, .project2 img, .project3 img {
+        width: 98%;
+    }
+    .projectsWrapper h3 {
+        font-size: 1.25rem;
+    }
+    .projectsWrapper i {
+        font-size: 1.65rem;
+    }
+
+
+    .contactImg  img {
+        width:350px;
+    }
+    .contactText p {
+        font-size: 1.15rem;
+    }
 }
